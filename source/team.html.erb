@@ -1,0 +1,53 @@
+<div id="team">
+  <div class="team-content">
+    <h1>This template was built with <i class="fa fa-heart"></i> by</h1>
+    <ul class="list-inline">
+      <% {"James Dunn" => "thorgold", "Armaan Amazan" => "aamazan"}.each do |name, github_nickname| %>
+        <li>
+          <% link_to "https://kitt.lewagon.com/alumni/#{github_nickname}", target: "_blank" do %>
+            <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{github_nickname}", class: "img-circle" %>
+          <% end %>
+          <h2><%= name %></h2>
+          <p>
+            <% link_to "https://github.com/#{github_nickname}", target: "_blank" do %>
+              <i class="fa fa-github"></i> <%= github_nickname %>
+            <% end %>
+          </p>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- <div class="about-content">
+    <h1>This template is built with <i class="fa fa-heart"></i> by</h1>
+    <ul class="list-inline">
+        <li>
+          <img src="https://kitt.lewagon.com/placeholder/users/ssaunier" class="img-circle" alt="Ssaunier">
+          <h2>Sébastien Saunier</h2>
+          <p>
+          <a href="http://github.com/ssaunier">
+            <i class="fa fa-github"></i> ssaunier
+          </a>
+        </p>
+        </li>
+        <li>
+          <img src="https://kitt.lewagon.com/placeholder/users/papillard" class="img-circle" alt="Papillard">
+          <h2>Boris Paillard</h2>
+          <p>
+      <a href="http://github.com/papillard">
+        <i class="fa fa-github"></i> papillard
+      </a>
+          </p>
+        </li>
+    </ul>
+  </div>
+ -->
